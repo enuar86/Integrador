@@ -38,6 +38,7 @@
   height: 80px;
   padding: 0px 50px;
   position: fixed;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   top: 0;
   z-index: 1;
   margin-bottom: 20px;
@@ -69,13 +70,19 @@
 .navbar__link a {
   color: black;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .navbar__link li:first-child > a {
   color: blueviolet;
   font-weight: 800;
 }
+
+.navbar__link li:last-child > a {
+  color: black;
+  font-weight: 800;
+}
+
 .navbar {
   display: flex;
 }
@@ -87,9 +94,17 @@
   display: none;
 }
 
-/* Main */
+.bars-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
-/* El main va a servir de contenedor principal de todas las secciones y además para darle un fondo a las secciones que van a estar limitadas a 1200px máximo y centrarlas en la página para resoluciones grandes */
+.bars-menu span {
+  height: 1.5px;
+  width: 30px;
+  background: black;
+}
 
 main {
   display: flex;
@@ -99,7 +114,6 @@ main {
   width: 100%;
 }
 
-/* Hero */
 #hero {
   margin-top: 80px;
   display: flex;
